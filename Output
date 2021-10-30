@@ -1,0 +1,302 @@
+/usr/bin/python3.8 /home/tron/PycharmProjects/sdfgfdn/main.py
+        date  date_block_num  shop_id  item_id  item_price  item_cnt_day
+0 2013-01-02               0       59    22154      999.00           1.0
+1 2013-01-03               0       25     2552      899.00           1.0
+2 2013-01-05               0       25     2552      899.00          -1.0
+3 2013-01-06               0       25     2554     1709.05           1.0
+4 2013-01-15               0       25     2555     1099.00           1.0
+____________________________
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2935849 entries, 0 to 2935848
+Data columns (total 6 columns):
+ #   Column          Dtype         
+---  ------          -----         
+ 0   date            datetime64[ns]
+ 1   date_block_num  int64         
+ 2   shop_id         int64         
+ 3   item_id         int64         
+ 4   item_price      float64       
+ 5   item_cnt_day    float64       
+dtypes: datetime64[ns](1), float64(2), int64(3)
+memory usage: 134.4 MB
+None
+____________________________
+       date_block_num       shop_id       item_id    item_price  item_cnt_day
+count    2.935849e+06  2.935849e+06  2.935849e+06  2.935849e+06  2.935849e+06
+mean     1.456991e+01  3.300173e+01  1.019723e+04  8.908532e+02  1.242641e+00
+std      9.422988e+00  1.622697e+01  6.324297e+03  1.729800e+03  2.618834e+00
+min      0.000000e+00  0.000000e+00  0.000000e+00 -1.000000e+00 -2.200000e+01
+25%      7.000000e+00  2.200000e+01  4.476000e+03  2.490000e+02  1.000000e+00
+50%      1.400000e+01  3.100000e+01  9.343000e+03  3.990000e+02  1.000000e+00
+75%      2.300000e+01  4.700000e+01  1.568400e+04  9.990000e+02  1.000000e+00
+max      3.300000e+01  5.900000e+01  2.216900e+04  3.079800e+05  2.169000e+03
+   ID  shop_id  item_id
+0   0        5     5037
+1   1        5     5320
+2   2        5     5233
+3   3        5     5232
+4   4        5     5268
+____________________________
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 214200 entries, 0 to 214199
+Data columns (total 3 columns):
+ #   Column   Non-Null Count   Dtype
+---  ------   --------------   -----
+ 0   ID       214200 non-null  int64
+ 1   shop_id  214200 non-null  int64
+ 2   item_id  214200 non-null  int64
+dtypes: int64(3)
+memory usage: 4.9 MB
+None
+____________________________
+                  ID        shop_id        item_id
+count  214200.000000  214200.000000  214200.000000
+mean   107099.500000      31.642857   11019.398627
+std     61834.358168      17.561933    6252.644590
+min         0.000000       2.000000      30.000000
+25%     53549.750000      16.000000    5381.500000
+50%    107099.500000      34.500000   11203.000000
+75%    160649.250000      47.000000   16071.500000
+max    214199.000000      59.000000   22167.000000
+                                           item_name  item_id  item_category_id
+0          ! ВО ВЛАСТИ НАВАЖДЕНИЯ (ПЛАСТ.)         D        0                40
+1  !ABBYY FineReader 12 Professional Edition Full...        1                76
+2      ***В ЛУЧАХ СЛАВЫ   (UNV)                    D        2                40
+3    ***ГОЛУБАЯ ВОЛНА  (Univ)                      D        3                40
+4        ***КОРОБКА (СТЕКЛО)                       D        4                40
+____________________________
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 22170 entries, 0 to 22169
+Data columns (total 3 columns):
+ #   Column            Non-Null Count  Dtype 
+---  ------            --------------  ----- 
+ 0   item_name         22170 non-null  object
+ 1   item_id           22170 non-null  int64 
+ 2   item_category_id  22170 non-null  int64 
+dtypes: int64(2), object(1)
+memory usage: 519.7+ KB
+None
+____________________________
+           item_id  item_category_id
+count  22170.00000      22170.000000
+mean   11084.50000         46.290753
+std     6400.07207         15.941486
+min        0.00000          0.000000
+25%     5542.25000         37.000000
+50%    11084.50000         40.000000
+75%    16626.75000         58.000000
+max    22169.00000         83.000000
+                        shop_name  shop_id
+0   !Якутск Орджоникидзе, 56 фран        0
+1   !Якутск ТЦ "Центральный" фран        1
+2                Адыгея ТЦ "Мега"        2
+3  Балашиха ТРК "Октябрь-Киномир"        3
+4        Волжский ТЦ "Волга Молл"        4
+____________________________
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   shop_name  60 non-null     object
+ 1   shop_id    60 non-null     int64 
+dtypes: int64(1), object(1)
+memory usage: 1.1+ KB
+None
+____________________________
+         shop_id
+count  60.000000
+mean   29.500000
+std    17.464249
+min     0.000000
+25%    14.750000
+50%    29.500000
+75%    44.250000
+max    59.000000
+        item_category_name  item_category_id
+0  PC - Гарнитуры/Наушники                 0
+1         Аксессуары - PS2                 1
+2         Аксессуары - PS3                 2
+3         Аксессуары - PS4                 3
+4         Аксессуары - PSP                 4
+____________________________
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 84 entries, 0 to 83
+Data columns (total 2 columns):
+ #   Column              Non-Null Count  Dtype 
+---  ------              --------------  ----- 
+ 0   item_category_name  84 non-null     object
+ 1   item_category_id    84 non-null     int64 
+dtypes: int64(1), object(1)
+memory usage: 1.4+ KB
+None
+____________________________
+       item_category_id
+count         84.000000
+mean          41.500000
+std           24.392622
+min            0.000000
+25%           20.750000
+50%           41.500000
+75%           62.250000
+max           83.000000
+                        shop_name  shop_id
+0   !Якутск Орджоникидзе, 56 фран        0
+1   !Якутск ТЦ "Центральный" фран        1
+2                Адыгея ТЦ "Мега"        2
+3  Балашиха ТРК "Октябрь-Киномир"        3
+4        Волжский ТЦ "Волга Молл"        4
+____________________________
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 60 entries, 0 to 59
+Data columns (total 2 columns):
+ #   Column     Non-Null Count  Dtype 
+---  ------     --------------  ----- 
+ 0   shop_name  60 non-null     object
+ 1   shop_id    60 non-null     int64 
+dtypes: int64(1), object(1)
+memory usage: 1.1+ KB
+None
+____________________________
+         shop_id
+count  60.000000
+mean   29.500000
+std    17.464249
+min     0.000000
+25%    14.750000
+50%    29.500000
+75%    44.250000
+max    59.000000
+              date  ...                    item_category_name
+0       2013-01-02  ...                        Кино - Blu-Ray
+1       2013-01-02  ...                        Кино - Blu-Ray
+2       2013-01-03  ...                        Кино - Blu-Ray
+3       2013-01-20  ...                        Кино - Blu-Ray
+4       2013-01-23  ...                        Кино - Blu-Ray
+...            ...  ...                                   ...
+2935361 2015-10-29  ...  Программы - Для дома и офиса (Цифра)
+2935362 2015-10-28  ...  Программы - Для дома и офиса (Цифра)
+2935391 2015-10-28  ...                       Игры PC - Цифра
+2935392 2015-10-29  ...                       Игры PC - Цифра
+2935614 2015-10-18  ...              Подарки - Мягкие игрушки
+
+[1224439 rows x 10 columns]
+Warning: QT_DEVICE_PIXEL_RATIO is deprecated. Instead use:
+   QT_AUTO_SCREEN_SCALE_FACTOR to enable platform plugin controlled per-screen factors.
+   QT_SCREEN_SCALE_FACTORS to set per-screen DPI.
+   QT_SCALE_FACTOR to set the application global scale factor.
+AxesSubplot(0.125,0.11;0.775x0.77)
+                               date_block_num  ... item_cnt_day
+                                         mean  ...          sum
+date_block_num shop_id item_id                 ...             
+0              2       33                 0.0  ...          1.0
+                       482                0.0  ...          1.0
+                       491                0.0  ...          1.0
+                       839                0.0  ...          1.0
+                       1007               0.0  ...          3.0
+...                                       ...  ...          ...
+33             59      22087             33.0  ...          6.0
+                       22088             33.0  ...          2.0
+                       22091             33.0  ...          1.0
+                       22100             33.0  ...          1.0
+                       22102             33.0  ...          1.0
+
+[600158 rows x 5 columns]
+        date_block_num  shop_id  item_id  sum
+0                    0        2       33  1.0
+1                    0        2      482  1.0
+2                    0        2      491  1.0
+3                    0        2      839  1.0
+4                    0        2     1007  3.0
+...                ...      ...      ...  ...
+600153              33       59    22087  6.0
+600154              33       59    22088  2.0
+600155              33       59    22091  1.0
+600156              33       59    22100  1.0
+600157              33       59    22102  1.0
+
+[600158 rows x 4 columns]
+            ID  date_block_num  sum
+0            0            20.0  1.0
+1            0            22.0  1.0
+2            0            23.0  2.0
+3            0            24.0  2.0
+4            0            28.0  1.0
+...        ...             ...  ...
+702949  214197            25.0  1.0
+702950  214198             0.0  0.0
+702951  214199            17.0  3.0
+702952  214199            18.0  1.0
+702953  214199            19.0  1.0
+
+[702954 rows x 3 columns]
+date_block_num  0.0   1.0   2.0   3.0   4.0   ...  29.0  30.0  31.0  32.0  33.0
+ID                                            ...                              
+0                NaN   NaN   NaN   NaN   NaN  ...   1.0   1.0   3.0   1.0   NaN
+1                0.0   NaN   NaN   NaN   NaN  ...   NaN   NaN   NaN   NaN   NaN
+2                NaN   NaN   NaN   NaN   NaN  ...   2.0   NaN   1.0   3.0   1.0
+3                NaN   NaN   NaN   NaN   NaN  ...   NaN   NaN   1.0   NaN   NaN
+4                0.0   NaN   NaN   NaN   NaN  ...   NaN   NaN   NaN   NaN   NaN
+...              ...   ...   ...   ...   ...  ...   ...   ...   ...   ...   ...
+214195           NaN   NaN   NaN   NaN   NaN  ...   NaN   NaN   NaN   NaN   1.0
+214196           0.0   NaN   NaN   NaN   NaN  ...   NaN   NaN   NaN   NaN   NaN
+214197           1.0   NaN   NaN   NaN   NaN  ...   NaN   NaN   NaN   NaN   NaN
+214198           0.0   NaN   NaN   NaN   NaN  ...   NaN   NaN   NaN   NaN   NaN
+214199           NaN   NaN   NaN   NaN   NaN  ...   NaN   NaN   NaN   NaN   NaN
+
+[214200 rows x 34 columns]
+date_block_num  0.0   1.0   2.0   3.0   4.0   ...  29.0  30.0  31.0  32.0  33.0
+ID                                            ...                              
+0                0.0   0.0   0.0   0.0   0.0  ...   1.0   1.0   3.0   1.0   0.0
+1                0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+2                0.0   0.0   0.0   0.0   0.0  ...   2.0   0.0   1.0   3.0   1.0
+3                0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   1.0   0.0   0.0
+4                0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+5                0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   1.0   1.0
+6                0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   3.0   2.0
+7                0.0   0.0   0.0   0.0   0.0  ...   1.0   0.0   0.0   0.0   0.0
+8                0.0   0.0   0.0   0.0   0.0  ...   4.0   3.0   2.0   3.0   0.0
+9                0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+10               0.0   0.0   0.0   0.0   0.0  ...   6.0   5.0   5.0   2.0   3.0
+11               0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   1.0   0.0
+12               0.0   0.0   1.0   0.0   1.0  ...   0.0   0.0   0.0   0.0   0.0
+13               0.0   0.0   0.0   0.0   0.0  ...   3.0   1.0   1.0   0.0   0.0
+14               0.0   0.0   0.0   0.0   0.0  ...   1.0   4.0   3.0   2.0   2.0
+15               0.0   0.0   0.0   0.0   0.0  ...   1.0   1.0   2.0   1.0   6.0
+16               0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+17               0.0   0.0   0.0   0.0   0.0  ...   1.0   0.0   0.0   0.0   0.0
+18               0.0   0.0   0.0   0.0   0.0  ...   3.0   2.0   2.0   2.0   2.0
+19               0.0   0.0   0.0   0.0   0.0  ...   0.0   0.0   0.0   0.0   0.0
+
+[20 rows x 34 columns]
+2021-10-30 21:26:32.772032: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory
+2021-10-30 21:26:32.772061: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2021-10-30 21:26:35.044525: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory
+2021-10-30 21:26:35.044565: W tensorflow/stream_executor/cuda/cuda_driver.cc:269] failed call to cuInit: UNKNOWN ERROR (303)
+2021-10-30 21:26:35.044594: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (monesh): /proc/driver/nvidia/version does not exist
+2021-10-30 21:26:35.044853: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+lstm (LSTM)                  (None, 33, 128)           66560     
+_________________________________________________________________
+dropout (Dropout)            (None, 33, 128)           0         
+_________________________________________________________________
+lstm_1 (LSTM)                (None, 64)                49408     
+_________________________________________________________________
+dense (Dense)                (None, 32)                2080      
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 32)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 16)                528       
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 17        
+=================================================================
+Total params: 118,593
+Trainable params: 118,593
+Non-trainable params: 0
+_________________________________________________________________
+None
+
